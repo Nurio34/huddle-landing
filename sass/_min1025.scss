@@ -1,0 +1,124 @@
+
+@media (min-width:1025px) {
+
+body {
+    text-align: start;
+
+    .main-header {
+        background-image: url("../image/bg-hero-desktop.svg");
+
+        padding-inline: 4rem;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: 0.35fr 0.05fr 0.60fr;
+
+        &__header {
+            padding-block: 3rem 1rem;
+
+            grid-column: 1/-1;
+        }
+
+        &__section {
+            grid-column: 1/2;
+
+            h1 {
+                font-size: calc($fs-1 * 2);
+            }
+            
+            p {
+                font-size: calc($fs-1 *0.9);  
+                line-height: 1.8;
+            }
+        }
+
+        &__picture {
+            grid-column: 3/4;
+        }
+    }
+
+    .section {
+
+        &__container {     
+            display: flex;
+            align-items: center;
+
+            margin: 4rem 5rem;
+
+            &__picture {
+                order: var(--order);
+                flex-basis: var(--fb);
+            }
+        }
+
+        &__footer {
+            text-align: center;
+            padding-inline: 16rem;
+        }
+    }
+
+    .grid {
+
+        padding-block: 11rem 3rem;
+        grid-template-columns: 0.6fr 4fr 1fr 1.2fr 1fr 1.2fr 1fr 4fr 0.6fr;
+        row-gap: 2rem;
+        
+        &__item-1 {
+            width:100%;
+            padding:unset;
+
+            grid-column: 2/3;
+        }
+
+        &__item-2 {
+            padding:unset;
+
+            grid-column: 2/3;
+
+            li {
+
+            }
+        }
+
+        &__item-3,
+        &__item-4 {
+            grid-column: var(--gc);
+
+            ul {
+
+                li {
+
+                    a {
+
+                    }
+                }
+            }
+        }
+
+        &__item-5 {
+            padding:unset ;
+
+            grid-column: 8/9;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: baseline;
+
+            ul {
+
+                li {
+                    
+                    a {
+
+                    }
+                }
+            }
+
+            p {
+                padding: unset;
+            }
+        }
+    }
+}
+}
